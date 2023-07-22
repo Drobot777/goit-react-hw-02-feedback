@@ -4,9 +4,7 @@ import { Notification } from "components/Notification";
 import { Component } from "react";
 
 export class Statistics extends Component {
-    constructor(props){
-        super(props);
-    };
+
 renders=()=>{
     if(this.props.total===0){
         return <Notification message="There is no feedback"/>
