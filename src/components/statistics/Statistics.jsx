@@ -5,8 +5,8 @@ import { Component } from "react";
 
 export class Statistics extends Component {
     constructor(props){
-        super(props)
-    }
+        super(props);
+    };
 renders=()=>{
     if(this.props.total===0){
         return <Notification message="There is no feedback"/>
@@ -34,7 +34,5 @@ return(<>
 Statistics.ropTypes={
     good:PropTypes.number.isRequired,
     neutral:PropTypes.number.isRequired,
-    bad:PropTypes.number.isRequired,
-    total:PropTypes.func.isRequired,
-    positivePercentage:PropTypes.func.isRequired
-    }
+    bad:PropTypes.number.isRequired
+ }
